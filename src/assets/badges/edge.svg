@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>edge</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="edge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M33.55,48.6 L21.35,48.6 L21.35,53 L17.5,53 L17.5,78.4 L60.5,78.4 L60.5,53 L55.55,53 L55.55,48.6 L43.35,48.6 L43.35,53 L33.55,53 L33.55,48.6 Z" id="Combined-Shape" stroke="#E6E6E6" fill="#EBEBEB"></path>
+        <path d="M55.55,21.6 L43.35,21.6 L43.35,26.0857143 L39.5,26.0857143 L39.5,52 L82.5,52 L82.5,26.0857143 L77.55,26.0857143 L77.55,21.6 L65.35,21.6 L65.35,26.0857143 L55.55,26.0857143 L55.55,21.6 Z" id="Combined-Shape" stroke="#EB3636" fill="#FF5E5E"></path>
+    </g>
+</svg>
