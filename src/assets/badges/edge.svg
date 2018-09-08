@@ -5,7 +5,13 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="edge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M33.55,48.6 L21.35,48.6 L21.35,53 L17.5,53 L17.5,78.4 L60.5,78.4 L60.5,53 L55.55,53 L55.55,48.6 L43.35,48.6 L43.35,53 L33.55,53 L33.55,48.6 Z" id="Combined-Shape" stroke="#E6E6E6" fill="#EBEBEB"></path>
-        <path d="M55.55,21.6 L43.35,21.6 L43.35,26.0857143 L39.5,26.0857143 L39.5,52 L82.5,52 L82.5,26.0857143 L77.55,26.0857143 L77.55,21.6 L65.35,21.6 L65.35,26.0857143 L55.55,26.0857143 L55.55,21.6 Z" id="Combined-Shape" stroke="#EB3636" fill="#FF5E5E"></path>
+        <g id="Group" transform="translate(36.000000, 37.000000)">
+            <g id="2/gray" transform="translate(0.000000, 12.641026)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.1,0.5 L2.4,0.5 L2.4,2.5 L0.5,2.5 L0.5,13.5 L18.5,13.5 L18.5,2.5 L16.6,2.5 L16.6,0.5 L11.9,0.5 L11.9,2.5 L7.1,2.5 L7.1,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/red" transform="translate(9.666667, 0.446154)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M7.1,0.5 L2.4,0.5 L2.4,2.5 L0.5,2.5 L0.5,13.5 L18.5,13.5 L18.5,2.5 L16.6,2.5 L16.6,0.5 L11.9,0.5 L11.9,2.5 L7.1,2.5 L7.1,0.5 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
     </g>
 </svg>
