@@ -5,12 +5,12 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="edge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(36.000000, 37.000000)">
-            <g id="2/gray" transform="translate(0.000000, 12.641026)" fill="#EBEBEB" stroke="#E6E6E6">
-                <path d="M7.1,0.5 L2.4,0.5 L2.4,2.5 L0.5,2.5 L0.5,13.5 L18.5,13.5 L18.5,2.5 L16.6,2.5 L16.6,0.5 L11.9,0.5 L11.9,2.5 L7.1,2.5 L7.1,0.5 Z" id="Combined-Shape"></path>
+        <g id="Group" transform="translate(30.000000, 33.000000)">
+            <g id="2/gray" transform="translate(0.000000, 16.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M10.3,0.5 L3.2,0.5 L3.2,3.21428571 L0.5,3.21428571 L0.5,18.5 L26.5,18.5 L26.5,3.21428571 L23.8,3.21428571 L23.8,0.5 L16.7,0.5 L16.7,3.21428571 L10.3,3.21428571 L10.3,0.5 Z" id="Combined-Shape"></path>
             </g>
-            <g id="2/red" transform="translate(9.666667, 0.446154)" fill="#FF5E5E" stroke="#EB3636">
-                <path d="M7.1,0.5 L2.4,0.5 L2.4,2.5 L0.5,2.5 L0.5,13.5 L18.5,13.5 L18.5,2.5 L16.6,2.5 L16.6,0.5 L11.9,0.5 L11.9,2.5 L7.1,2.5 L7.1,0.5 Z" id="Combined-Shape"></path>
+            <g id="2/red" transform="translate(13.333333, 0.000000)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M10.3,0.5 L3.2,0.5 L3.2,3.21428571 L0.5,3.21428571 L0.5,18.5 L26.5,18.5 L26.5,3.21428571 L23.8,3.21428571 L23.8,0.5 L16.7,0.5 L16.7,3.21428571 L10.3,3.21428571 L10.3,0.5 Z" id="Combined-Shape"></path>
             </g>
         </g>
     </g>

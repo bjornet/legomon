@@ -5,21 +5,41 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="pillar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="1/red" transform="translate(10.000000, 56.000000)" fill="#FF5E5E" stroke="#EB3636">
-            <path d="M0.5,2.64285714 L0.5,14.5 L9.5,14.5 L9.5,2.64285714 L7.5,2.64285714 L7.5,0.5 L2.5,0.5 L2.5,2.64285714 L0.5,2.64285714 Z" id="Combined-Shape"></path>
+        <g id="Group" transform="translate(-1.000000, 12.000000)">
+            <g id="1/red" transform="translate(21.000000, 60.000000)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M0.5,2.5 L0.5,13.5 L9.5,13.5 L9.5,2.5 L7.5,2.5 L7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(71.000000, 60.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(61.000000, 48.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(71.000000, 36.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(61.000000, 24.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(71.000000, 12.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(21.000000, 24.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(11.000000, 12.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(11.000000, 36.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(21.000000, 48.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <path d="M0,73.75 L99,73.75" id="Line" stroke="#EB3636" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="4"></path>
+            <g id="6/gray" transform="translate(21.000000, 0.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M47.5,0.5 L42.5,0.5 L42.5,2.5 L37.5,2.5 L37.5,0.5 L32.5,0.5 L32.5,2.5 L27.5,2.5 L27.5,0.5 L22.5,0.5 L22.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L59.5,13.5 L59.5,2.5 L57.5,2.5 L57.5,0.5 L52.5,0.5 L52.5,2.5 L47.5,2.5 L47.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
         </g>
-        <g id="2/gray" transform="translate(70.000000, 56.000000)" fill="#EBEBEB" stroke="#E6E6E6">
-            <path d="M7.5,0.5 L2.5,0.5 L2.5,2.64285714 L0.5,2.64285714 L0.5,14.5 L19.5,14.5 L19.5,2.64285714 L17.5,2.64285714 L17.5,0.5 L12.5,0.5 L12.5,2.64285714 L7.5,2.64285714 L7.5,0.5 Z" id="Combined-Shape"></path>
-        </g>
-        <g id="2/gray" transform="translate(70.000000, 43.000000)" fill="#EBEBEB" stroke="#E6E6E6">
-            <path d="M7.5,0.5 L2.5,0.5 L2.5,2.64285714 L0.5,2.64285714 L0.5,14.5 L19.5,14.5 L19.5,2.64285714 L17.5,2.64285714 L17.5,0.5 L12.5,0.5 L12.5,2.64285714 L7.5,2.64285714 L7.5,0.5 Z" id="Combined-Shape"></path>
-        </g>
-        <g id="2/gray" transform="translate(10.000000, 43.000000)" fill="#EBEBEB" stroke="#E6E6E6">
-            <path d="M7.5,0.5 L2.5,0.5 L2.5,2.64285714 L0.5,2.64285714 L0.5,14.5 L19.5,14.5 L19.5,2.64285714 L17.5,2.64285714 L17.5,0.5 L12.5,0.5 L12.5,2.64285714 L7.5,2.64285714 L7.5,0.5 Z" id="Combined-Shape"></path>
-        </g>
-        <g id="6/gray" transform="translate(20.000000, 30.000000)" fill="#EBEBEB" stroke="#E6E6E6">
-            <path d="M47.5,0.5 L42.5,0.5 L42.5,2.5 L37.5,2.5 L37.5,0.5 L32.5,0.5 L32.5,2.5 L27.5,2.5 L27.5,0.5 L22.5,0.5 L22.5,2.5 L20.5,2.5 L20.5,2.51923077 L17.5,2.51923077 L17.5,0.5 L12.5,0.5 L12.5,2.51923077 L7.5,2.51923077 L7.5,0.5 L2.5,0.5 L2.5,2.51923077 L0.5,2.51923077 L0.5,14.5 L19.5,14.5 L19.5,14.4807692 L59.5,14.4807692 L59.5,2.5 L57.5,2.5 L57.5,0.5 L52.5,0.5 L52.5,2.5 L47.5,2.5 L47.5,0.5 Z" id="Combined-Shape"></path>
-        </g>
-        <path d="M0,70.75 L99,70.75" id="Line" stroke="#EB3636" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="4"></path>
     </g>
 </svg>
