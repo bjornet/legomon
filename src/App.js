@@ -2,9 +2,14 @@ import React, { Component } from 'react'
 import './App.css'
 
 // bricks
+import brickOneRed from './assets/bricks/1/red.svg'
 import brickTwoRed from './assets/bricks/2/red.svg'
 import brickFourRed from './assets/bricks/4/red.svg'
 import brickSixRed from './assets/bricks/6/red.svg'
+import brickOneRedFlat from './assets/bricks/1/flat.svg'
+import brickTwoRedFlat from './assets/bricks/2/flat.svg'
+import brickFourRedFlat from './assets/bricks/4/flat.svg'
+import brickSixRedFlat from './assets/bricks/6/flat.svg'
 
 // badges
 import summit from './assets/badges/summit.svg'
@@ -12,11 +17,19 @@ import edge from './assets/badges/edge.svg'
 import pillar from './assets/badges/pillar.svg'
 import perpendicular from './assets/badges/perpendicular.svg'
 
+
 let mockData = {
   bricks: [
     {
+      name: '2x1',
+      image: brickOneRed,
+      x: 2,
+      y: 1,
+      z: 3
+    },
+    {
       name: '2x2',
-      image: brickTwoRed, // use xyz instead of this name
+      image: brickTwoRed,
       x: 2,
       y: 2,
       z: 3
@@ -34,6 +47,34 @@ let mockData = {
       x: 2,
       y: 6,
       z: 3
+    },
+    {
+      name: '2x1 Flat',
+      image: brickOneRedFlat,
+      x: 2,
+      y: 1,
+      z: 1
+    },
+    {
+      name: '2x2 Flat',
+      image: brickTwoRedFlat,
+      x: 2,
+      y: 2,
+      z: 1
+    },
+    {
+      name: '2x4 Flat',
+      image: brickFourRedFlat,
+      x: 2,
+      y: 4,
+      z: 1
+    },
+    {
+      name: '2X6 Flat',
+      image: brickSixRedFlat,
+      x: 2,
+      y: 6,
+      z: 1
     }
   ],
   badges: [
@@ -131,7 +172,8 @@ class AbstractLegoBrick extends Component {
 
     let renderBrick = function renderBrick(brickData) {
       let defaultImgStyle = {
-        minHeight: '15vh'
+        minHeight: '15vh',
+        maxWidth: '30vw'
       }
       return brickData.image ? <img style={defaultImgStyle} src={brickData.image} alt="Current Lego Brick" /> : brickData.name
     }
