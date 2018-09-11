@@ -1,6 +1,9 @@
 # Lego brick defenition:
 - http://brickarchitect.com/scale/
 
+# React
+- https://reactjs.org/docs/thinking-in-react.html
+
 # TODO
 - Cleanup function namings
 

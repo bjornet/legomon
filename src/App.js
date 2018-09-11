@@ -105,7 +105,8 @@ let mockData = {
   ]
 }
 
-class Header extends Component {
+class NextBrickButton extends Component {
+
   constructor(props) {
     super(props)
     this.handleClick = this.handleClick.bind(this)
@@ -116,14 +117,6 @@ class Header extends Component {
   }
 
   render() {
-    let title = 'Welcome to Legomon'
-    let titleStyle = {
-      display: 'inline-block',
-      color: 'dimgray',
-      fontSize: '2rem',
-      fontFamily: 'monospace',
-      margin: '1rem 0'
-    }
     let buttonStyle = {
       padding: '16px',
       position: 'absolute',
@@ -139,11 +132,41 @@ class Header extends Component {
     }
 
     return (
+      <button style={buttonStyle} onClick={this.handleClick}>
+        Next Monster Brick
+      </button>
+    )
+  }
+}
+
+class Header extends Component {
+
+  render() {
+    let title = 'Welcome to Legomon'
+    let titleStyle = {
+      display: 'inline-block',
+      color: 'dimgray',
+      fontSize: '2rem',
+      fontFamily: 'monospace',
+      margin: '1rem 0'
+    }
+
+    let brickCountStyle = {
+      position: 'absolute',
+      right: '0',
+      top: '0',
+      color: 'darkslategray',
+      background: 'whitesmoke',
+      padding: '10px',
+      margin: '4px',
+      border: '1px solid slategra'
+    }
+
+    return (
       <div style={{position: 'relative'}}>
-        <button style={buttonStyle} onClick={this.handleClick}>
-          Next Monster Brick
-        </button>
+        <NextBrickButton onNextBrickRequest={this.props.onNextBrickRequest} />
         <h1 style={titleStyle}>{title}</h1>
+        <p style={brickCountStyle}>Brickcount: <span>{this.props.brickCount}</span></p>
       </div>
     )
   }
@@ -248,10 +271,14 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleNextBrick = this.handleNextBrick.bind(this);
+    this.state = { brickCount: 1 }
   }
 
   handleNextBrick() {
-    this.setState({updatedXxx: Date.now()});
+    let increment = 1
+    this.setState(state => (
+      { brickCount: state.brickCount + increment }
+    ));
   }
 
   render() {
@@ -265,10 +292,9 @@ class App extends Component {
       textAlign: 'initial'
     }
 
-
     return (
       <div className="App">
-        <Header onNextBrickRequest={this.handleNextBrick} />
+        <Header onNextBrickRequest={this.handleNextBrick} brickCount={this.state.brickCount} />
         <LegoBrick />
         <Badges/>
         <footer style={footerStyle}>
