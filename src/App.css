@@ -1,3 +1,5 @@
+@import 'Loader.css';
+
 .App {
   text-align: center;
 }
@@ -10,4 +12,22 @@
 @keyframes App-spinner {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/* sandbox */
+
+.Badge-badges img {
+  animation-name: Badge-badge-in;
+  animation-duration: 1.2s;
+}
+
+@keyframes Badge-badge-in {
+  from {
+    transform: translate(-50vw) rotate(0.5turn);
+    opacity: 0.3;
+  }
+  to {
+    transform: translate(0) rotate(2turn);
+    opacity: 1;
+  }
 }

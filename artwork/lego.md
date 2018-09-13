@@ -32,6 +32,8 @@
 
 ## Edge
 
+## Hang
+
 
 # DONE (Todos)
 - find out how to trigger setState() on one compontent from another <button onClick={updateBrickAndBadges}">

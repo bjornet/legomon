@@ -12,11 +12,11 @@ import brickFourRedFlat from './assets/bricks/4/flat.svg'
 import brickSixRedFlat from './assets/bricks/6/flat.svg'
 
 // badges
-import summit from './assets/badges/summit.svg'
-import edge from './assets/badges/edge.svg'
-import pillar from './assets/badges/pillar.svg'
 import perpendicular from './assets/badges/perpendicular.svg'
-
+import edge from './assets/badges/edge.svg'
+import summit from './assets/badges/summit.svg'
+import pillar from './assets/badges/pillar.svg'
+import hang from './assets/badges/hang.svg'
 
 let mockData = {
   bricks: [
@@ -101,6 +101,12 @@ let mockData = {
       name: 'pillar',
       image: pillar,
       compatibility: [1,2]
+    },
+    {
+      id: 5,
+      name: 'hang',
+      image: hang,
+      compatibility: [1,2,4]
     }
   ]
 }
@@ -125,15 +131,15 @@ class NextBrickButton extends Component {
       border: 'none',
       boxShadow: 'dimgrey 4px 5px 0px 1px',
       left: '-10px',
-      bottom: '-33px',
       opacity: '0.7',
       cursor: 'pointer',
-      outline: 'none'
+      outline: 'none',
+      zIndex: '10'
     }
 
     return (
       <button style={buttonStyle} onClick={this.handleClick}>
-        Next Monster Brick
+        <span>Next Brick</span>
       </button>
     )
   }
@@ -163,11 +169,10 @@ class Header extends Component {
     }
 
     return (
-      <div style={{position: 'relative'}}>
-        <NextBrickButton onNextBrickRequest={this.props.onNextBrickRequest} />
+      <header style={{position: 'relative'}}>
         <h1 style={titleStyle}>{title}</h1>
         <p style={brickCountStyle}>Brickcount: <span>{this.props.brickCount}</span></p>
-      </div>
+      </header>
     )
   }
 }
@@ -190,7 +195,9 @@ class AbstractLegoBrick extends Component {
   render() {
     let defaultStyle = {
       background: 'whitesmoke',
-      padding: '10vh 0'
+      padding: '10vh 0',
+      minHeight: '17vh',
+      position: 'relative'
     }
 
     let renderBrick = function renderBrick(brickData) {
@@ -206,15 +213,16 @@ class AbstractLegoBrick extends Component {
 
     return (
       <div style={defaultStyle}>
-        {this.state.serverdata.bricks && brick}
+        {!this.props.loading ? this.state.serverdata.bricks && brick : <Loader />}
       </div>
+      
     )
   }
 }
 
 class LegoBrick extends AbstractLegoBrick {}
 
-class Badges extends Component {
+class Badge extends Component {
 
   constructor(props) {
     super(props)
@@ -252,34 +260,57 @@ class Badges extends Component {
       return currentBadges
     }
 
-    let results = this.state.serverdata.badges && getBadgesData(this.state.serverdata.badges)
+    let results = (this.state.serverdata.badges && !this.props.loading) && getBadgesData(this.state.serverdata.badges)
 
     return (
-      <div className="badges" style={{minHeight: '140px'}}>
-        {this.state.serverdata.badges && results.map(function(result) {
-          return <img key={result.id} src={result.image} alt={result.name} style={defaultStyle}/>
-        })}
+      <div className="Badge-badges" style={{minHeight: '140px'}}>
+        {
+        !this.props.loading ?
+          this.state.serverdata.badges && results.map(result => {
+            return <img 
+                    key={result.id} 
+                    src={result.image} 
+                    alt={result.name} 
+                    style={defaultStyle} />
+          })
+        : false
+        }
       </div>
     )
   
   }
-
 }
 
-class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.handleNextBrick = this.handleNextBrick.bind(this);
-    this.state = { brickCount: 1 }
+class RareEvents extends Component {
+  render() {
+    return (
+      <div>
+        <h3>Rare Event</h3>
+        <p style={{ background: 'red', color: 'white', padding: '10px' }}>Decide if this should be instead of Brick or Badge...</p>
+        <p>It has a chance to trigger depending of the state of the app.</p>
+        <p>Eg. `brickCount` can trigger a Rare Event called `50/50` or `Lumber!` or `Lego Split`. It demands the Legomon to split in half, the top part is placed on the ground and cannot be placed with direct contact to the ground part.</p>
+      </div>
+    )
   }
+}
 
-  handleNextBrick() {
-    let increment = 1
-    this.setState(state => (
-      { brickCount: state.brickCount + increment }
-    ));
+class Loader extends Component {
+
+  render() {
+    return (
+      <div className="Loader">
+        <div className="Loader__bar"></div>
+        <div className="Loader__bar"></div>
+        <div className="Loader__bar"></div>
+        <div className="Loader__bar"></div>
+        <div className="Loader__bar"></div>
+        <div className="Loader__ball"></div>
+      </div>
+    )
   }
+}
+
+class Footer extends Component {
 
   render() {
     let footerStyle = {
@@ -293,18 +324,58 @@ class App extends Component {
     }
 
     return (
+      <footer style={footerStyle}>
+        <h3>Rules</h3>
+        <ol>
+          <li>Find the big Lego brick shown above in your own pile of Lego</li>
+          <li>Place this brick upon your Legomon acording to the rule badges</li>
+          <li>Spin the randomizer to get the next brick</li>
+        </ol>     
+      </footer>
+    )
+  }
+}
+
+class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.handleNextBrick = this.handleNextBrick.bind(this);
+    this.state = {
+      brickCount: 1,
+      loadingNextBrick: false
+    }
+  }
+
+  handleNextBrick() {
+    let increment = 1
+
+    this.setState(state => (
+      { loadingNextBrick: true }
+    ))
+
+    // find a way to animate through React.
+    // why? to wait for animation to finnish to trigger setState as a callback
+    setTimeout(() => {
+      this.setState(state => (
+        { 
+          brickCount: state.brickCount + increment,
+          loadingNextBrick: false
+        }
+      ))
+    }, 1000)
+
+  }
+
+  render() {
+    return (
       <div className="App">
-        <Header onNextBrickRequest={this.handleNextBrick} brickCount={this.state.brickCount} />
-        <LegoBrick />
-        <Badges/>
-        <footer style={footerStyle}>
-          <h3>Rules</h3>
-          <ol>
-            <li>Find the big Lego brick shown above in your own pile of Lego</li>
-            <li>Place this brick upon your Legomon acording to the rule badges</li>
-            <li>Spin the randomizer to get the next brick</li>
-          </ol>     
-        </footer>
+        <Header brickCount={this.state.brickCount} />
+        <NextBrickButton onNextBrickRequest={this.handleNextBrick} />
+        <LegoBrick loading={this.state.loadingNextBrick} />
+        <Badge loading={this.state.loadingNextBrick} />
+        <Footer />
+        <RareEvents />
       </div>
     )
   }
