@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="20px" viewBox="0 0 30 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>2/_perspective/red</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2/_perspective/red" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M17.5,0.5 L12.5,0.5 L12.5,2.47979798 L10.5,2.47979798 L10.5,13.3585859 L29.5,13.3585859 L29.5,2.47979798 L27.5,2.47979798 L27.5,0.5 L22.5,0.5 L22.5,2.47979798 L17.5,2.47979798 L17.5,0.5 Z" id="Combined-Shape" stroke="#EB3636" fill="#FF5E5E"></path>
+        <g id="Group-Copy-3" transform="translate(0.000000, 2.000000)" fill="#FF5E5E" stroke="#EB3636">
+            <path d="M20.5,6.28309519 L20.5,17.1204919 L29.5,11.716999 L29.5,0.883095189 L20.5,6.28309519 Z" id="Rectangle"></path>
+            <path d="M0.5,6.28736755 L0.5,17.1204916 L9.5,11.716999 L9.5,0.901874965 L0.5,6.28736755 Z" id="Rectangle-Copy"></path>
+        </g>
+        <path d="M9.5,8.47979798 L7.5,8.47979798 L7.5,6.5 L2.5,6.5 L2.5,8.47979798 L0.5,8.47979798 L0.5,19.5 L19.5,19.5 L19.5,8.5 L17.5,8.5 L17.5,6.5 L12.5,6.5 L12.5,8.5 L9.5,8.5 L9.5,8.47979798 Z" id="Combined-Shape-Copy" stroke="#EB3636" fill="#FF5E5E"></path>
+    </g>
+</svg>

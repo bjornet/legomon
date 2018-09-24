@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>cutthroat</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="cutthroat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M0,54 L99,54" id="Line" stroke="#EB3636" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="4"></path>
+        <g id="Group-3" transform="translate(20.000000, 11.000000)">
+            <g id="2/gray" transform="translate(0.000000, 64.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(0.000000, 52.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(0.000000, 40.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/red" transform="translate(11.990496, 32.788711) rotate(14.000000) translate(-11.990496, -32.788711) translate(1.990496, 25.788711)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/red" transform="translate(14.893559, 21.145162) rotate(14.000000) translate(-14.893559, -21.145162) translate(4.893559, 14.145162)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/red" transform="translate(17.796622, 9.501614) rotate(14.000000) translate(-17.796622, -9.501614) translate(7.796622, 2.501614)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/red" transform="translate(40.000000, 64.000000)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/red" transform="translate(40.000000, 52.000000)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/red" transform="translate(40.000000, 40.000000)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="Group-2" transform="translate(40.095843, 21.067944) rotate(10.000000) translate(-40.095843, -21.067944) translate(33.595843, 17.067944)" fill="#EB3636">
+                <g id="Group" transform="translate(0.000000, -0.000000)">
+                    <path d="M-2.05280237e-13,0.339981886 C0.812191545,0.118373689 1.66757138,0 2.55085829,0 C6.47763755,0 9.85286847,2.33950821 11.3339027,5.68835685 L10.3069697,5.96352271 C8.95661773,3.05776805 5.99151689,1.04058985 2.55085829,1.04058985 C1.66231626,1.04058985 0.805490065,1.1751192 -7.59503571e-13,1.42473998 L-4.97379915e-14,0.339981886 Z" id="Combined-Shape"></path>
+                    <polygon id="Rectangle" transform="translate(11.049168, 6.729149) rotate(-15.000000) translate(-11.049168, -6.729149) " points="9.65902286 5.79795061 12.4393134 5.79795061 11.0787805 7.66034644"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

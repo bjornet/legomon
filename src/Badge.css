@@ -1,0 +1,63 @@
+.Badge-image {
+  animation-name: Badge-image-in;
+  animation-duration: 1.2s;
+}
+
+.Badge-badge[data-loading=loading] .Badge-image {
+  animation-name: Badge-image-out;
+  animation-duration: 1.5s;
+}
+
+.Badge-name {
+  animation-name: Badge-name-in;
+  animation-duration: 1.7s;
+}
+
+.Badge-badge[data-loading=loading] .Badge-name {
+  animation-name: Badge-name-out;
+  animation-duration: 1s;
+}
+
+@keyframes Badge-image-in {
+  from {
+    transform: translate(-50vw) rotate(0.5turn);
+    opacity: 0.3;
+  }
+
+  to {
+    transform: translate(0) rotate(2turn);
+    opacity: 1;
+  }
+}
+
+@keyframes Badge-image-out {
+  from {
+    transform: translate(0) rotate(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate(150vw) rotate(1.5turn);
+    opacity: 0;
+  }
+}
+
+@keyframes Badge-name-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Badge-name-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

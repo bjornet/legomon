@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
     <title>pillar</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="pillar" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(-1.000000, 12.000000)">
+        <g id="Group" transform="translate(0.000000, 7.000000)">
             <g id="1/red" transform="translate(21.000000, 60.000000)" fill="#FF5E5E" stroke="#EB3636">
                 <path d="M0.5,2.5 L0.5,13.5 L9.5,13.5 L9.5,2.5 L7.5,2.5 L7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="1/red" transform="translate(71.000000, 72.000000)" fill="#FF5E5E" stroke="#EB3636">
+                <path d="M0.5,2.5 L0.5,13.5 L9.5,13.5 L9.5,2.5 L7.5,2.5 L7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(21.000000, 48.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.9,0.5 L2.6,0.5 L2.6,2.5 L0.5,2.5 L0.5,13.5 L20.5,13.5 L20.5,2.5 L18.4,2.5 L18.4,0.5 L13.1,0.5 L13.1,2.5 L7.9,2.5 L7.9,0.5 Z" id="Combined-Shape"></path>
+            </g>
+            <g id="2/gray" transform="translate(11.000000, 36.000000)" fill="#EBEBEB" stroke="#E6E6E6">
+                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
             </g>
             <g id="2/gray" transform="translate(71.000000, 60.000000)" fill="#EBEBEB" stroke="#E6E6E6">
                 <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
@@ -30,16 +39,11 @@
             <g id="2/gray" transform="translate(11.000000, 12.000000)" fill="#EBEBEB" stroke="#E6E6E6">
                 <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
             </g>
-            <g id="2/gray" transform="translate(11.000000, 36.000000)" fill="#EBEBEB" stroke="#E6E6E6">
-                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
-            </g>
-            <g id="2/gray" transform="translate(21.000000, 48.000000)" fill="#EBEBEB" stroke="#E6E6E6">
-                <path d="M7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L19.5,13.5 L19.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 Z" id="Combined-Shape"></path>
-            </g>
             <path d="M0,73.75 L99,73.75" id="Line" stroke="#EB3636" stroke-width="0.5" stroke-linecap="square" stroke-dasharray="4"></path>
             <g id="6/gray" transform="translate(21.000000, 0.000000)" fill="#EBEBEB" stroke="#E6E6E6">
                 <path d="M47.5,0.5 L42.5,0.5 L42.5,2.5 L37.5,2.5 L37.5,0.5 L32.5,0.5 L32.5,2.5 L27.5,2.5 L27.5,0.5 L22.5,0.5 L22.5,2.5 L17.5,2.5 L17.5,0.5 L12.5,0.5 L12.5,2.5 L7.5,2.5 L7.5,0.5 L2.5,0.5 L2.5,2.5 L0.5,2.5 L0.5,13.5 L59.5,13.5 L59.5,2.5 L57.5,2.5 L57.5,0.5 L52.5,0.5 L52.5,2.5 L47.5,2.5 L47.5,0.5 Z" id="Combined-Shape"></path>
             </g>
         </g>
+        <polygon id="/" fill="#EB3636" points="45.75 94.8916063 54.1046524 60 55.960938 60 47.5142233 94.8916063"></polygon>
     </g>
 </svg>

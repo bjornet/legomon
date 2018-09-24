@@ -2,12 +2,24 @@
 - http://brickarchitect.com/scale/
 
 # React
-- https://reactjs.org/docs/thinking-in-react.html
+- 5 steps: HOW TO BUILD A REACT APP: https://reactjs.org/docs/thinking-in-react.html
+- RENDER GETS TRIGGERED. HOW AND WHY: http://lucybain.com/blog/2017/react-js-when-to-rerender/
 
-# TODO
-- Cleanup function namings
+# Redux (handle state / store)
+- https://redux.js.org/
+
+# CSS
+- try css-in-js: https://hackernoon.com/all-you-need-to-know-about-css-in-js-984a72d48ebc
+- redo height declaration. Make sure the layout does not give a jumpy impression
 
 # Bricks
+- update brickCount accordingly to data in rareEvent
+    * ie: 
+    * `ballerina` has to hold an absolute value for how many bricks should be removed (total - ballerinaRemoveAmount)
+    * `cuttroath` does not remove any bricks
+
+- Find a way to write out if the depth [x-axis] is a [1] or a [2]
+
 
 # Badges
 ## Ruleset
@@ -20,21 +32,22 @@
     * D (pillar): A, B
 - Bricks must NOT be acompanied by a Badge
 
-# Badges
 ## Perpendicular
 
 ## Summit
 
 ## Pillar
-* TODO *
-- redefine image so that it is clear that you cannot position one pillar piece next to another
-- only allow X amount of pillar pieces per (X * Y) amount of pieces [eg. 4 pillars on 100 pieces or so...]
+- rework illustration to support putting brick below ground lvl as well
 
 ## Edge
 
 ## Hang
 
-
-# DONE (Todos)
-- find out how to trigger setState() on one compontent from another <button onClick={updateBrickAndBadges}">
-    ANSWER: https://reactjs.org/docs/lifting-state-up.html
+# Rare Events
+- instead of Bricks and Badges
+- eg. 
+    `Cut in half!`:     Split the Legomon vertically into two equally tall parts (place them with 2 dots of LEGO apart).
+    `Ballerina`:        Remove half of the bricks that touches ground.
+    `Lego Man`:         Place a Lego Character anywhere on the Legomon
+    `Wheels`:           Place wheels on the legomon
+    `10xdecoration`:    Pick any arty bricks and decorate the Legomon with 'em!
