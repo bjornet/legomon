@@ -1,3 +1,15 @@
+# This project should contain the following leasons
+[x] react
+[-] graphQl:
+    - https://graphql.org/learn/
+    - https://www.robinwieruch.de/react-with-graphql-tutorial/
+[-] redux: https://redux.js.org/
+[-] styling: https://blog.logrocket.com/the-best-styling-in-react-tutorial-youve-ever-seen-676f1284b945
+
+# API
+https://rebrickable.com/api/v3/docs/?key=
+API KEY: fa2e09a991205bb8276007aa0d019012
+
 # Lego brick defenition:
 - http://brickarchitect.com/scale/
 

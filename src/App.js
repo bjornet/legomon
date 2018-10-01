@@ -214,11 +214,61 @@ class AbstractLegoBrick extends Component {
 
   constructor(props) {
     super(props)
-    this.state = {serverdata: {}}
+    this.state = {
+      serverdata: {},
+      rebrickableData: {}
+    }
+    this.fetchRebrickable = this.fetchRebrickable.bind(this)
   }
 
   componentDidMount() {
     this.setState({serverdata: mockData})
+    this.fetchRebrickable()
+  }
+
+  fetchRebrickable() {
+    // move to a separate node app, we cannot share our secret keys in frontend
+    // https://medium.appbase.io/securing-a-react-web-app-with-server-side-authentication-1b7c7dc55c16?gi=37652fb808f9
+
+    return fetch('https://rebrickable.com/api/v3/lego/parts/?part_cat_id=11',
+      {
+        // "credentials": "include",
+        "headers": {
+          'Authorization': 'key fa2e09a991205bb8276007aa0d019012'
+        },
+        // "referrer": "https://grolls.local/checkout/cart/",
+        // "referrerPolicy": "no-referrer-when-downgrade",
+        // "body": null,
+        "method": "GET",
+        "mode": "cors"
+      }
+    )
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      this.setState(function() {
+        return {rebrickableData: data}
+      })
+    })
+    // .then(data => {
+      // data.results.forEach(result => {
+      //   var element = null
+      //   var textNode = ''
+      
+      //   if(result.part_img_url) {
+      //     element = document.createElement('img')
+      //     element.setAttribute('src', result.part_img_url)
+      //   } else if(result.name) {
+      //     element = document.createElement('div')
+      //     textNode = document.createTextNode(result.name)
+      //     element.appendChild(textNode)
+      //   }
+      //     document.body.append(element)
+      // })
+    // })
+    // .catch(error => {
+    //   console.log(error);
+    // });
   }
 
   getRandomBrickIndex() {
@@ -246,15 +296,16 @@ class AbstractLegoBrick extends Component {
       <div className="current-lego-brick">
         <img style={styleImage} src={brickData.image} alt="Current Lego Brick" />
         <p style={styleDimensionsWrapper}>
-          <span style={styleDimension}>x: {brickData.x}</span>
-          <span style={styleDimension}>y: {brickData.y}</span>
-          <span style={styleDimension}>z: {brickData.z}</span>
+          <span style={styleDimension}>x-axis: {brickData.x}</span>
+          <span style={styleDimension}>y-axis: {brickData.y}</span>
+          <span style={styleDimension}>z-axis: {brickData.z}</span>
         </p>
       </div>
       : brickData.name
   }
 
   render() {
+    // eslint-disable-next-line
     let defaultStyle = {
       background: 'whitesmoke',
       padding: '10vh 0',
@@ -265,14 +316,40 @@ class AbstractLegoBrick extends Component {
 
     let randomIndex = this.getRandomBrickIndex()
     let brickData = this.state.serverdata.bricks && this.state.serverdata.bricks[randomIndex]
+    // eslint-disable-next-line
     let brick = brickData && this.renderBrick(brickData)
 
+    let basicBricksPattern = /Brick.+?x.*\d$/
+
     return (
-      <div style={defaultStyle}>
-        {!this.props.loading ? this.state.serverdata.bricks && brick : <Loader />}
+      <div>
+        {
+          this.state.rebrickableData.results &&
+          this.state.rebrickableData.results.map(brick => {
+            if (
+              brick.part_img_url !== null &&
+              basicBricksPattern.test(brick.name)
+            ) {
+              console.log(brick.name)
+              console.log(/Brick.+?x.*\d$/.test(brick.name));
+              return (
+              <div key={brick.part_num}>
+                <img src={brick.part_img_url} alt={brick.name} />
+                <div>{brick.name}</div>
+              </div>
+              )
+            }
+            return false
+          })
+        }
       </div>
-      
     )
+    // return (
+    //   <div style={defaultStyle}>
+    //     {!this.props.loading ? this.state.serverdata.bricks && brick : <Loader />}
+    //   </div>
+      
+    // )
   }
 }
 
@@ -428,6 +505,7 @@ class RareEvent extends Component {
   }
 }
 
+// eslint-disable-next-line
 class Loader extends Component {
 
   render() {
@@ -454,7 +532,7 @@ class Help extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick() {
+  handleClick(param, e) {
     this.setState((x) => { return {active: !this.state.active} })
   }
 
@@ -497,11 +575,24 @@ class Help extends Component {
       right: '0'
     }
 
-    console.log(this.state.active);
+    let styleHelpOverlay = {
+      position: 'absolute',
+      left: '9999px',
+      top: '0px',
+      right: '0px',
+      bottom: '0px',
+      backgroundColor: '#000000ad',
+      zIndex: '20'
+    }
+
+    let styleHelpOverlayActive = {
+      left: '0'
+    }
 
     return (
       <div className="Help-wrapper">
         <button style={styleHelpButton} onClick={this.handleClick}>?</button>
+        <div style={this.state.active ? {...styleHelpOverlay, ...styleHelpOverlayActive} : styleHelpOverlay} onClick={this.handleClick}></div>
         <div style={this.state.active ? {...styleHelpBody, ...styleHelpBodyActive} : styleHelpBody}>
           <h3>Rules</h3>
           <ol>
@@ -576,7 +667,7 @@ class App extends Component {
           rareEvent ?
           <RareEvent />
           : 
-          <div>
+          <div className="ordenary-event">
             <LegoBrick loading={this.state.loadingNextBrick} />
             <Badge loading={this.state.loadingNextBrick} />
           </div>
